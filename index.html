@@ -22,6 +22,7 @@
                 <li><a href="#events">Events</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#booking">Booking</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -118,6 +119,34 @@
                     <p class="author">- Underground Dweller</p>
                 </div>
             </div>
+        </section>
+
+        <section id="booking">
+            <h2>// BOOKING</h2>
+            <form id="booking-form" action="https://formspree.io/f/xwpqdawz" method="POST">
+                <div class="form-group">
+                    <label for="booking-name">Your Name</label>
+                    <input type="text" id="booking-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-email">Your Email</label>
+                    <input type="email" id="booking-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-type">Type of Event</label>
+                    <input type="text" id="event-type" name="event_type" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-date">Preferred Date</label>
+                    <input type="date" id="event-date" name="event_date" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-details">Event Details</label>
+                    <textarea id="event-details" name="event_details" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Booking Request</button>
+            </form>
+            <div id="booking-form-status"></div>
         </section>
 
         <section id="contact">

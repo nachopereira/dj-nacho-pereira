@@ -330,6 +330,24 @@ h2 {
     text-shadow: var(--glow-intensity-magenta);
 }
 
+/* Booking Section */
+#booking-form {
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--glow-intensity);
+    padding: 2.5rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#booking-form .form-group label {
+    color: var(--accent-color-magenta);
+}
+
 /* Contact Section */
 #contact {
     padding-bottom: 5rem;
