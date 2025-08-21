@@ -379,6 +379,55 @@ h2 {
     line-height: 1.6;
 }
 
+/* Blog Section */
+#blog .blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 90%;
+    max-width: 800px;
+    margin-top: 2rem;
+}
+
+.blog-post {
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--glow-intensity);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.blog-post h3 {
+    color: var(--accent-color-magenta);
+    text-shadow: var(--glow-intensity-magenta);
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.blog-post .date {
+    font-size: 0.9rem;
+    color: var(--primary-text-color);
+    margin-bottom: 1rem;
+}
+
+.blog-post p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.blog-post .read-more {
+    color: var(--accent-color-blue);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.blog-post .read-more:hover {
+    color: var(--accent-color-magenta);
+}
+
 /* Contact Section */
 #contact {
     padding-bottom: 5rem;
