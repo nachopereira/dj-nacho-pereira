@@ -81,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             item.addEventListener('click', () => {
                 loadTrack(index);
-                audioPlayer.play();
             });
         });
     }
@@ -101,6 +100,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Initialize audio context only when user interacts
         initializeAudioContext();
+
+        audioPlayer.addEventListener('canplaythrough', () => {
+            audioPlayer.play();
+        }, { once: true });
     }
 
     function drawVisualizer() {
