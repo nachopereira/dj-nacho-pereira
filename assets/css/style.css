@@ -348,6 +348,37 @@ h2 {
     color: var(--accent-color-magenta);
 }
 
+/* FAQ Section */
+#faq .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 90%;
+    max-width: 800px;
+    margin-top: 2rem;
+}
+
+.faq-item {
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--glow-intensity);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.faq-item h3 {
+    color: var(--accent-color-blue);
+    text-shadow: var(--glow-intensity);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.faq-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
 /* Contact Section */
 #contact {
     padding-bottom: 5rem;
