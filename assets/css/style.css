@@ -240,6 +240,34 @@ h2 {
     box-shadow: var(--glow-intensity-magenta);
 }
 
+/* Gallery Section */
+#gallery .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    border: 1px solid var(--border-color);
+    box-shadow: var(--glow-intensity);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
 /* Contact Section */
 #contact {
     padding-bottom: 5rem;
