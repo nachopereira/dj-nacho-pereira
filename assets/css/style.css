@@ -556,6 +556,26 @@ h2 {
     filter: grayscale(0%) brightness(100%);
 }
 
+/* Social Media Section */
+#social-media .social-media-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-media-icon {
+    color: var(--primary-text-color);
+    font-size: 3rem;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-media-icon:hover {
+    color: var(--accent-color-magenta);
+    text-shadow: var(--glow-intensity-magenta);
+}
+
 /* Contact Section */
 #contact {
     padding-bottom: 5rem;
