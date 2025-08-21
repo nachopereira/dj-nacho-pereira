@@ -81,6 +81,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
             item.addEventListener('click', () => {
                 loadTrack(index);
+                const playPromise = audioPlayer.play();
+                if (playPromise !== undefined) {
+                    playPromise.then(_ => {
+                        // Automatic playback started!
+                    })
+                    .catch(error => {
+                        // Auto-play was prevented
+                        console.log('Playback prevented by browser');
+                    });
+                }
             });
         });
     }
@@ -100,10 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Initialize audio context only when user interacts
         initializeAudioContext();
-
-        audioPlayer.addEventListener('canplaythrough', () => {
-            audioPlayer.play();
-        }, { once: true });
     }
 
     function drawVisualizer() {
