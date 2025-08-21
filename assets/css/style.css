@@ -240,6 +240,37 @@ h2 {
     box-shadow: var(--glow-intensity-magenta);
 }
 
+/* Events Section */
+#events .event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 90%;
+    max-width: 800px;
+    margin-top: 2rem;
+}
+
+.event-item {
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--glow-intensity);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.event-item h3 {
+    color: var(--accent-color-magenta);
+    text-shadow: var(--glow-intensity-magenta);
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.event-item p {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
 /* Contact Section */
 #contact {
     padding-bottom: 5rem;
