@@ -49,7 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const playlist = [
         { title: 'Melodic Voyage', src: 'assets/audio/melodic-voyage-by-dj-nacho-pereira.mp3' },
         { title: 'Cybernetic Dreams', src: 'assets/audio/cybernetic-dreams.mp3' },
-        { title: 'Neon Pulse', src: 'assets/audio/neon-pulse.mp3' }
+        { title: 'Neon Pulse', src: 'assets/audio/neon-pulse.mp3' },
+        { title: 'Cyberpunk Plattforms', src: 'assets/audio/cyberpunk-plattforms.mp3' }
     ];
 
     function initializeAudioContext() {
